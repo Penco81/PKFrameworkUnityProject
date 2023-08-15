@@ -13,10 +13,18 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638273399905743264
-    m_Hash: 3762082776
+      ticks: 638277021190952761
+    m_Hash: 276287288
 m_EmbeddedPackageManifests:
-  m_ManifestsStatus: {}
+  m_ManifestsStatus:
+    D:/MyGit/PKFrameworkUnityProject/PKFrameworkUnityProject/Packages/com.unity.ugui@1.0.0/package.json:
+      m_FilePath: D:/MyGit/PKFrameworkUnityProject/PKFrameworkUnityProject/Packages/com.unity.ugui@1.0.0/package.json
+      m_PathExists: 1
+      m_ContentTrackingEnabled: 1
+      m_ModificationDate:
+        serializedVersion: 2
+        ticks: 638255511380000000
+      m_Hash: 2935986189
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: D:/MyGit/PKFrameworkUnityProject/PKFrameworkUnityProject/Packages
@@ -936,12 +944,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.6.5
     nextVersion: 
-- packageId: com.unity.ugui@1.0.0
-  testable: 0
+- packageId: com.unity.ugui@file:D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Packages\com.unity.ugui@1.0.0
+  testable: 1
   isDirectDependency: 1
   version: 1.0.0
-  source: 2
-  resolvedPath: D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Library\PackageCache\com.unity.ugui@1.0.0
+  source: 3
+  resolvedPath: D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Packages\com.unity.ugui@1.0.0
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -1049,8 +1057,10 @@ m_ResolvedPackages:
     - 1.7.8
     - 1.8.0-pre.1
     - 1.8.0
+    - 1.9.0
     compatible:
     - 1.8.0
+    - 1.9.0
     verified: 1.8.0
   dependencies:
   - name: com.unity.ugui

@@ -61,6 +61,7 @@
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Singleton\MonoSingleton.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Asset\IAssetLoader.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Base\IFrameworkComponent.cs" />
+     <Compile Include="Assets\Example\ProcedureExample.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Pool\ReferencePool.cs" />
      <Compile Include="Assets\PKFramework\Core\Language\Language.cs" />
      <Compile Include="Assets\PKFramework\Core\UI\UILayer.cs" />
@@ -85,11 +86,22 @@
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Procedure\ProcedureBase.cs" />
      <Compile Include="Assets\PKFramework\Core\Utility\CommonUtils.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Fsm\Fsm.cs" />
-     <Compile Include="Assets\Example\ProcedureExample.cs" />
+     <Compile Include="Assets\GameFunctionMods\Bezier\BezierMath.cs" />
+     <Compile Include="Assets\GameFunctionMods\Common\GameObjectPool.cs" />
+     <Compile Include="Assets\GameFunctionMods\Common\HeapTimer.cs" />
+     <Compile Include="Assets\GameFunctionMods\Bezier\BezierDrawLine.cs" />
+     <Compile Include="Assets\GameFunctionMods\Bezier\Bezier.cs" />
+     <Compile Include="Assets\GameFunctionMods\Common\Timer.cs" />
+     <Compile Include="Assets\GameFunctionMods\Bezier\BezierNodeObject.cs" />
+     <Compile Include="Assets\GameFunctionMods\Parabola\ParabolaPath.cs" />
+     <Compile Include="Assets\GameFunctionMods\Parabola\Missile.cs" />
+     <Compile Include="Assets\GameFunctionMods\FPS\FPSUI.cs" />
+     <Compile Include="Assets\GameFunctionMods\CameraCapture\CameraCapture.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Test\GameAsset\Animation\AnimatorControllers" />
      <None Include="Assets\Test\GameAsset\Fonts\OFL.txt" />
      <Folder Include="Assets\PKFramework\Scripts\Runtime\Scheduler" />
+     <None Include="Packages\com.unity.ugui@1.0.0\package.json" />
      <Folder Include="Assets\Test\GameAsset\Animation\Animations" />
      <Folder Include="Assets\Test\GameAsset\Animation" />
      <Folder Include="Assets\PKFramework\Scripts\Runtime\InitConfig" />
@@ -105,18 +117,23 @@
      <Folder Include="Assets\Example" />
      <Folder Include="Assets\PKFramework\Scripts\Runtime\Singleton" />
      <None Include="Assets\GameFramework\Libraries\GameFramework.xml" />
+     <Folder Include="Assets\GameFunctionMods\FPS" />
      <Folder Include="Assets\PKFramework\Core\UI" />
      <Folder Include="Assets\Test\GameAsset\Audio" />
+     <Folder Include="Assets\GameFunctionMods" />
      <Folder Include="Assets\Test\GameAsset\Prefabs" />
      <Folder Include="Assets\Test\GameAsset\Textures" />
      <Folder Include="Assets\PKFramework\Core\UI\Interface" />
      <Folder Include="Assets\PKFramework\Core\Manager" />
      <Folder Include="Assets\Test\GameAsset\Scenes" />
+     <Folder Include="Assets\GameFunctionMods\Parabola" />
      <Folder Include="Assets\PKFramework\Core\Event" />
      <Folder Include="Assets\Test\GameAsset" />
+     <Folder Include="Packages\com.unity.ugui@1.0.0\Tests" />
      <Folder Include="Assets\PKFramework\Scripts\Runtime\Fsm" />
      <Folder Include="Assets\GameFramework" />
      <Folder Include="Assets\PKFramework\Demo" />
+     <Folder Include="Assets\GameFunctionMods\Bezier" />
      <Folder Include="Assets\PKFramework\Core\Language" />
      <Folder Include="Assets\PKFramework" />
      <Folder Include="Assets\GameFramework\Libraries" />
@@ -126,10 +143,13 @@
      <Folder Include="Assets\PKFramework\Scripts\Runtime\Base" />
      <Folder Include="Assets\PKFramework\Scene" />
      <Folder Include="Assets\PKFramework\Scripts\Runtime" />
+     <Folder Include="Assets\GameFunctionMods\Common" />
      <Folder Include="Assets\PKFramework\Core\Pool" />
      <Folder Include="Assets\Test" />
      <Folder Include="Assets\PKFramework\Prefabs" />
      <Folder Include="Assets\PKFramework\Scripts\Runtime\Procedure" />
+     <Folder Include="Assets\GameFunctionMods\CameraCapture" />
+     <Folder Include="Packages\com.unity.ugui@1.0.0" />
      <Folder Include="Assets\PKFramework\Scripts\Runtime\Event" />
      <Folder Include="Assets\PKFramework\Scripts\Runtime\Pool" />
      <Reference Include="UnityEngine">
@@ -381,17 +401,17 @@
      <Reference Include="UnityEditor.UnityConnectModule">
      <HintPath>D:\UnityHubInstall\Editor\2021.3.27f1c2\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="ReportGeneratorMerged">
-     <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Library\PackageCache\com.unity.testtools.codecoverage@1.2.3\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
-     </Reference>
      <Reference Include="GameFramework">
      <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Assets\GameFramework\Libraries\GameFramework.dll</HintPath>
      </Reference>
      <Reference Include="ICSharpCode.SharpZipLib">
      <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Assets\GameFramework\Libraries\ICSharpCode.SharpZipLib.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+     <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="ReportGeneratorMerged">
+     <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Library\PackageCache\com.unity.testtools.codecoverage@1.2.3\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
      </Reference>
      <Reference Include="netstandard">
      <HintPath>D:\UnityHubInstall\Editor\2021.3.27f1c2\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -804,9 +824,6 @@
      <Reference Include="Unity.VisualScripting.Flow">
      <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
      </Reference>
-     <Reference Include="UnityEditor.UI">
-     <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.PlasticSCM.Editor">
      <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
@@ -815,9 +832,6 @@
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor">
      <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.UI">
-     <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State">
      <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
@@ -830,13 +844,21 @@
      </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="UnityGameFramework.Runtime.csproj">
+      <Project>{0984fe40-b3c5-6aba-2b93-127f8210f3f4}</Project>
+      <Name>UnityGameFramework.Runtime</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityGameFramework.Editor.csproj">
       <Project>{e194d6b4-19c3-cfbf-cbee-31e0dfa50f73}</Project>
       <Name>UnityGameFramework.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityGameFramework.Runtime.csproj">
-      <Project>{0984fe40-b3c5-6aba-2b93-127f8210f3f4}</Project>
-      <Name>UnityGameFramework.Runtime</Name>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{1cd0f6ad-aa4b-e18c-6a08-642b51c20af3}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{521ce06a-e0f1-7568-f950-e582274366b1}</Project>
+      <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
