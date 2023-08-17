@@ -42,6 +42,9 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Pool\ObjectPool.cs" />
+     <Compile Include="Assets\GameFunctionMods\Common\GameObjectPool.cs" />
+     <Compile Include="Assets\GameFunctionMods\Bezier\BezierMath.cs" />
+     <Compile Include="Assets\GameFunctionMods\CameraCapture\CameraCapture.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Asset\AssetComponent.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Event\EventCenter.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Base\FrameworkComponentManager.cs" />
@@ -51,17 +54,21 @@
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Procedure\IProcedureManager.cs" />
      <Compile Include="Assets\PKFramework\Core\Pool\ObjectPool.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Base\TypeNamePair.cs" />
+     <Compile Include="Assets\GameFunctionMods\Bezier\BezierDrawLine.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Utility\Utility.cs" />
+     <Compile Include="Assets\GameFunctionMods\Parabola\Missile.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Scheduler\Scheduler.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Base\Variable.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Base\Launcher.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Fsm\FsmComponent.cs" />
+     <Compile Include="Assets\GameFunctionMods\Common\HeapTimer.cs" />
+     <Compile Include="Assets\GameFunctionMods\Bezier\Bezier.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Pool\ReferenceCollection.cs" />
      <Compile Include="Assets\Test\Scripts\Test.cs" />
+     <Compile Include="Assets\GameFunctionMods\Bezier\BezierNodeObject.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Singleton\MonoSingleton.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Asset\IAssetLoader.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Base\IFrameworkComponent.cs" />
-     <Compile Include="Assets\Example\ProcedureExample.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Pool\ReferencePool.cs" />
      <Compile Include="Assets\PKFramework\Core\Language\Language.cs" />
      <Compile Include="Assets\PKFramework\Core\UI\UILayer.cs" />
@@ -71,14 +78,17 @@
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Procedure\ProcedureManager.cs" />
      <Compile Include="Assets\PKFramework\Core\UI\UIManager.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Fsm\IFsm.cs" />
+     <Compile Include="Assets\GameFunctionMods\Parabola\ParabolaPath.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Asset\AssetHelper.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Fsm\FsmState.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Pool\IRecyclable.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Event\EventComponent.cs" />
+     <Compile Include="Assets\GameFunctionMods\Common\Timer.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\InitConfig\InitConfig.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Pool\ObjectCollection.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Utility\Utility.Text.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Asset\EditorAssetLoader.cs" />
+     <Compile Include="Assets\GameFunctionMods\FPS\FPSUI.cs" />
      <Compile Include="Assets\PKFramework\Core\UI\BasePanel.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Pool\PoolObjectBase.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Scheduler\SchedulerComponent.cs" />
@@ -86,35 +96,35 @@
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Procedure\ProcedureBase.cs" />
      <Compile Include="Assets\PKFramework\Core\Utility\CommonUtils.cs" />
      <Compile Include="Assets\PKFramework\Scripts\Runtime\Fsm\Fsm.cs" />
-     <Compile Include="Assets\GameFunctionMods\Bezier\BezierMath.cs" />
-     <Compile Include="Assets\GameFunctionMods\Common\GameObjectPool.cs" />
-     <Compile Include="Assets\GameFunctionMods\Common\HeapTimer.cs" />
-     <Compile Include="Assets\GameFunctionMods\Bezier\BezierDrawLine.cs" />
-     <Compile Include="Assets\GameFunctionMods\Bezier\Bezier.cs" />
-     <Compile Include="Assets\GameFunctionMods\Common\Timer.cs" />
-     <Compile Include="Assets\GameFunctionMods\Bezier\BezierNodeObject.cs" />
-     <Compile Include="Assets\GameFunctionMods\Parabola\ParabolaPath.cs" />
-     <Compile Include="Assets\GameFunctionMods\Parabola\Missile.cs" />
-     <Compile Include="Assets\GameFunctionMods\FPS\FPSUI.cs" />
-     <Compile Include="Assets\GameFunctionMods\CameraCapture\CameraCapture.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Test\GameAsset\Animation\AnimatorControllers" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Test\GameAsset\Fonts\OFL.txt" />
      <Folder Include="Assets\PKFramework\Scripts\Runtime\Scheduler" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <Folder Include="Assets\TextMesh Pro\Sprites" />
      <None Include="Packages\com.unity.ugui@1.0.0\package.json" />
+     <Folder Include="Assets\TextMesh Pro\Resources\Sprite Assets" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <Folder Include="Assets\Test\GameAsset\Animation\Animations" />
      <Folder Include="Assets\Test\GameAsset\Animation" />
      <Folder Include="Assets\PKFramework\Scripts\Runtime\InitConfig" />
      <Folder Include="Assets\Test\GameAsset\Sprites" />
      <Folder Include="Assets\GameFramework\Scripts" />
+     <Folder Include="Assets\Test\UGUIBatchTest" />
+     <Folder Include="Assets\TextMesh Pro\Resources\Fonts &amp; Materials" />
      <Folder Include="Assets\Test\Scripts" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <Folder Include="Assets\TextMesh Pro\Resources" />
      <Folder Include="Assets\PKFramework\Scripts\Runtime\Logger" />
      <Folder Include="Assets\PKFramework\Scripts\Runtime\Asset" />
      <None Include="Assets\GameFramework\Libraries\link.xml" />
      <Folder Include="Assets\Test\GameAsset\Fonts" />
      <Folder Include="Assets\PKFramework\Core\Utility" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <Folder Include="Assets\PKFramework\Core" />
-     <Folder Include="Assets\Example" />
+     <Folder Include="Assets\TextMesh Pro" />
      <Folder Include="Assets\PKFramework\Scripts\Runtime\Singleton" />
      <None Include="Assets\GameFramework\Libraries\GameFramework.xml" />
      <Folder Include="Assets\GameFunctionMods\FPS" />
@@ -125,33 +135,54 @@
      <Folder Include="Assets\Test\GameAsset\Textures" />
      <Folder Include="Assets\PKFramework\Core\UI\Interface" />
      <Folder Include="Assets\PKFramework\Core\Manager" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <Folder Include="Assets\Test\GameAsset\Scenes" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <Folder Include="Assets\GameFunctionMods\Parabola" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
      <Folder Include="Assets\PKFramework\Core\Event" />
      <Folder Include="Assets\Test\GameAsset" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <Folder Include="Packages\com.unity.ugui@1.0.0\Tests" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <Folder Include="Assets\PKFramework\Scripts\Runtime\Fsm" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <Folder Include="Assets\GameFramework" />
      <Folder Include="Assets\PKFramework\Demo" />
      <Folder Include="Assets\GameFunctionMods\Bezier" />
      <Folder Include="Assets\PKFramework\Core\Language" />
      <Folder Include="Assets\PKFramework" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+     <Folder Include="Assets\TextMesh Pro\Shaders" />
      <Folder Include="Assets\GameFramework\Libraries" />
+     <Folder Include="Assets\TextMesh Pro\Resources\Style Sheets" />
      <Folder Include="Assets\PKFramework\Scripts\Runtime\Utility" />
+     <Folder Include="Assets\TextMesh Pro\Fonts" />
+     <Folder Include="Assets\Dll" />
      <Folder Include="Assets\PKFramework\Scripts" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\GameFramework\package.json" />
      <Folder Include="Assets\PKFramework\Scripts\Runtime\Base" />
      <Folder Include="Assets\PKFramework\Scene" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <Folder Include="Assets\PKFramework\Scripts\Runtime" />
      <Folder Include="Assets\GameFunctionMods\Common" />
      <Folder Include="Assets\PKFramework\Core\Pool" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <Folder Include="Assets\Test" />
+     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <Folder Include="Assets\TextMesh Pro\Documentation" />
      <Folder Include="Assets\PKFramework\Prefabs" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
      <Folder Include="Assets\PKFramework\Scripts\Runtime\Procedure" />
      <Folder Include="Assets\GameFunctionMods\CameraCapture" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne.json" />
      <Folder Include="Packages\com.unity.ugui@1.0.0" />
      <Folder Include="Assets\PKFramework\Scripts\Runtime\Event" />
      <Folder Include="Assets\PKFramework\Scripts\Runtime\Pool" />
+     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
      <Reference Include="UnityEngine">
      <HintPath>D:\UnityHubInstall\Editor\2021.3.27f1c2\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -412,6 +443,9 @@
      </Reference>
      <Reference Include="ReportGeneratorMerged">
      <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Library\PackageCache\com.unity.testtools.codecoverage@1.2.3\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Windows.Forms">
+     <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Assets\Dll\System.Windows.Forms.dll</HintPath>
      </Reference>
      <Reference Include="netstandard">
      <HintPath>D:\UnityHubInstall\Editor\2021.3.27f1c2\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -841,6 +875,24 @@
      </Reference>
      <Reference Include="Unity.EditorCoroutines.Editor">
      <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Addressables">
+     <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Library\ScriptAssemblies\Unity.Addressables.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Addressables.Editor">
+     <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Library\ScriptAssemblies\Unity.Addressables.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.CacheServer">
+     <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Library\ScriptAssemblies\UnityEditor.CacheServer.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.ResourceManager">
+     <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Library\ScriptAssemblies\Unity.ResourceManager.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.ScriptableBuildPipeline">
+     <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+     <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

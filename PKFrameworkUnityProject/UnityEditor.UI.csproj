@@ -378,6 +378,9 @@
      <Reference Include="ReportGeneratorMerged">
      <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Library\PackageCache\com.unity.testtools.codecoverage@1.2.3\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
      </Reference>
+     <Reference Include="System.Windows.Forms">
+     <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Assets\Dll\System.Windows.Forms.dll</HintPath>
+     </Reference>
      <Reference Include="nunit.framework">
      <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
      </Reference>

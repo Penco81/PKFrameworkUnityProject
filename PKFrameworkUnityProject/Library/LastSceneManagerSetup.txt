@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/GameFunctionMods/Bezier/Bezier.unity
+- path: Assets/Test/UGUIBatchTest/UGUIBatchTest.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

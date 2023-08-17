@@ -566,6 +566,9 @@
      <Reference Include="ReportGeneratorMerged">
      <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Library\PackageCache\com.unity.testtools.codecoverage@1.2.3\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
      </Reference>
+     <Reference Include="System.Windows.Forms">
+     <HintPath>D:\MyGit\PKFrameworkUnityProject\PKFrameworkUnityProject\Assets\Dll\System.Windows.Forms.dll</HintPath>
+     </Reference>
      <Reference Include="netstandard">
      <HintPath>D:\UnityHubInstall\Editor\2021.3.27f1c2\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
      </Reference>
