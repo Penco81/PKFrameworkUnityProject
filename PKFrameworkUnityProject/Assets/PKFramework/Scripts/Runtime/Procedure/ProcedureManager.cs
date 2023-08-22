@@ -8,10 +8,10 @@ namespace PKFramework.Runtime.Procedure
     /// <summary>
     /// 流程管理器。
     /// </summary>
-    internal sealed class ProcedureManager : MonoSingleton<ProcedureManager>, IProcedureManager
+    public sealed class ProcedureManager : MonoSingleton<ProcedureManager>
     {
-        private IFsmComponent fsmComponent;
-        private IFsm<IProcedureManager> procedureFsm;
+        public IFsmComponent fsmComponent;
+        public IFsm<ProcedureManager> procedureFsm;
 
         /// <summary>
         /// 初始化流程管理器的新实例。

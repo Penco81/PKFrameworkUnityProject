@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine;
 
 namespace PKFramework.Runtime
@@ -31,10 +30,10 @@ namespace PKFramework.Runtime
             {
                 return ".ttf";
             }
-            else if (t == typeof(AnimatorController))
-            {
-                return ".controller";
-            }
+            //else if (t == typeof(AnimatorController))
+            //{
+            //    return ".controller";
+            //}
 
             PKLogger.LogError($"Invalid Type: {t.Name}");
             return "";

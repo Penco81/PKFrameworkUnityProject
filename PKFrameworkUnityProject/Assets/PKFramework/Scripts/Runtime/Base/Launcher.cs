@@ -1,4 +1,5 @@
 using System;
+using PKFramework.Core;
 using PKFramework.Runtime.Singleton;
 using UnityEngine;
 
@@ -14,12 +15,12 @@ namespace PKFramework.Runtime
 
         private void Awake()
         {
-
+            
         }
 
-        private void InitFrameworkComponents()
+        private void Update()
         {
-            
+            PKFrameworkCore.Update(Time.deltaTime, Time.unscaledDeltaTime);
         }
     }
 }

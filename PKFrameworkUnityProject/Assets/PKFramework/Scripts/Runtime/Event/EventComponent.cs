@@ -1,10 +1,11 @@
 using System;
 using System.Collections.Generic;
+using PKFramework.Core;
 using PKFramework.Runtime.Singleton;
 
 namespace PKFramework.Runtime.Event
 {
-    public class EventComponent : MonoSingleton<EventComponent>
+    public class EventManager : Singleton<EventManager>, IManager
     {
         private Dictionary<EventCenterType, EventCenter> allEventCenters =
             new Dictionary<EventCenterType, EventCenter>();
@@ -13,6 +14,7 @@ namespace PKFramework.Runtime.Event
         {
             UI,
             GameLogic,
+            Data
         }
 
         public ulong Subscribe<T>(EventCenterType ect, string key, Action<EventParamsBase> callback)
@@ -57,14 +59,14 @@ namespace PKFramework.Runtime.Event
             }
         }
 
-        protected override void OnDestroy() 
+        public void Update(float elapseSeconds, float realElapseSeconds)
         {
-            base.OnDestroy();
-            foreach (var pair in allEventCenters)
-            {
-                pair.Value.Clear();
-            }
-            allEventCenters.Clear();
+            
+        }
+
+        public void Shutdown()
+        {
+            
         }
     }
 }

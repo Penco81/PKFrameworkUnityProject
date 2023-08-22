@@ -1,0 +1,1 @@
+{"extension":".bundle","saveBundleName":true,"build":"Test","dirs":["Assets/Test/GameAsset/Prefabs"],"assets":[{"name":"Enemy1.prefab","bundle":0,"dir":0,"deps":[],"addressMode":0}],"bundles":[{"name":"test/enemy1_prefab.bundle","hash":"bbfc04ab6074232233ebb30430726076","size":73245,"deps":[]}]}

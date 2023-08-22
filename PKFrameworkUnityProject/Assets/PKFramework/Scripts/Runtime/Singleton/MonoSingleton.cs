@@ -2,6 +2,10 @@ using UnityEngine;
 
 namespace PKFramework.Runtime.Singleton
 {
+    /// <summary>
+    /// 线程安全，因为Mono始终在一个线程上执行
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoSingleton<T>
     {
         private static T instance;

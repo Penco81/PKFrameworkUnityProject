@@ -8,12 +8,16 @@ namespace PKFramework.Runtime
     {
         Object LoadSync(string assetName, LoadAssetCallbacks loadAssetCallbacks, object userData = null, int priority = 0);
         
-        Object LoadAsync(string assetName, LoadAssetCallbacks loadAssetCallbacks, object userData = null, int priority = 0);
+        void LoadAsync(string assetName, LoadAssetCallbacks loadAssetCallbacks, object userData = null, int priority = 0);
         
         T LoadSync<T>(string assetName, LoadAssetCallbacks loadAssetCallbacks, object userData = null,  int priority = 0) where T : Object ;
         
-        T LoadAsync<T>(string assetName, LoadAssetCallbacks loadAssetCallbacks, object userData = null,  int priority = 0) where T : Object ;
+        void LoadAsync<T>(string assetName, LoadAssetCallbacks loadAssetCallbacks, object userData = null,  int priority = 0) where T : Object ;
 
         void UnloadAsset(Object asset);
+
+        void Start();
+
+        void Update();
     }
 }

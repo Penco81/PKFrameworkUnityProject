@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+CRC: 2360959764
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ca62c97ee8c41b24da1cbd426b90d824
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3e9adc9e3f7fcdf357b567c408a56dfa
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 50
+  Script: {instanceID: 0}
+- Class: 61
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: d22f79ef0655a41bb9e62823f6e7a3f1, type: 3}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Test/GameAsset/Prefabs/Enemy1.prefab
+Dependencies: []

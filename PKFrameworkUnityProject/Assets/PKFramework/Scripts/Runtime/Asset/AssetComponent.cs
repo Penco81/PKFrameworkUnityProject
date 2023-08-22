@@ -36,9 +36,12 @@ namespace PKFramework.Runtime
                 {
                     switch (mode)
                     {
+#if UNITY_EDITOR
                         case AssetLoadMode.Editor:
-                            loader = new EditorAssetLoader();
+                            //TODO
+                            //loader = new PKFramework.Editor.EditorAssetLoader().EditorAssetLoader();
                             break;
+#endif
                         case AssetLoadMode.EditorRelease:
 
                             break;
@@ -49,7 +52,7 @@ namespace PKFramework.Runtime
 
                             break;
                         default:
-                            loader = new EditorAssetLoader();
+                            //TODO
                             break;
                     }
                 }
@@ -73,33 +76,6 @@ namespace PKFramework.Runtime
             Release,
         }
 
-        public Object LoadSync(string assetName, LoadAssetCallbacks loadAssetCallbacks,
-            object userData = null, int priority = 0)
-        {
-            return Loader.LoadAsync(assetName, loadAssetCallbacks, userData, priority);
-        }
-
-        public Object LoadAsync(string assetName, LoadAssetCallbacks loadAssetCallbacks, object userData = null,
-            int priority = 0)
-        {
-            return Loader.LoadAsync(assetName, loadAssetCallbacks, userData, priority);
-        }
-
-        public T LoadSync<T>(string assetName, LoadAssetCallbacks loadAssetCallbacks, object userData = null, int priority = 0)
-            where T : Object
-        {
-            return Loader.LoadSync<T>(assetName, loadAssetCallbacks, userData, priority);
-        }
-
-        public T LoadAsync<T>(string assetName, LoadAssetCallbacks loadAssetCallbacks, object userData = null,
-            int priority = 0) where T : Object
-        {
-            return Loader.LoadAsync<T>(assetName, loadAssetCallbacks, userData, priority);
-        }
-
-        void UnloadAsset(Object asset)
-        {
-            
-        }
+        
     }
 }

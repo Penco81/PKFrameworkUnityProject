@@ -26,7 +26,7 @@ namespace PKFramework.Runtime.Fsm
         /// 有限状态机状态初始化时调用。
         /// </summary>
         /// <param name="fsm">有限状态机引用。</param>
-        protected internal virtual void OnInit(IFsm<T> fsm)
+        public virtual void OnInit(IFsm<T> fsm)
         {
         }
 
@@ -34,11 +34,11 @@ namespace PKFramework.Runtime.Fsm
         /// 有限状态机状态进入时调用。
         /// </summary>
         /// <param name="fsm">有限状态机引用。</param>
-        protected internal virtual void OnEnter(IFsm<T> fsm)
+        public virtual void OnEnter(IFsm<T> fsm)
         {
         }
         
-        protected internal virtual void OnUpdate(IFsm<T> fsm)
+        public virtual void OnUpdate(IFsm<T> fsm)
         {
         }
 
@@ -47,7 +47,7 @@ namespace PKFramework.Runtime.Fsm
         /// </summary>
         /// <param name="fsm">有限状态机引用。</param>
         /// <param name="isShutdown">是否是关闭有限状态机时触发。</param>
-        protected internal virtual void OnLeave(IFsm<T> fsm, bool isShutdown)
+        public virtual void OnLeave(IFsm<T> fsm, bool isShutdown)
         {
         }
 
@@ -55,7 +55,7 @@ namespace PKFramework.Runtime.Fsm
         /// 有限状态机状态销毁时调用。
         /// </summary>
         /// <param name="fsm">有限状态机引用。</param>
-        protected internal virtual void OnDestroy(IFsm<T> fsm)
+        public virtual void OnDestroy(IFsm<T> fsm)
         {
         }
 
@@ -64,7 +64,7 @@ namespace PKFramework.Runtime.Fsm
         /// </summary>
         /// <typeparam name="TState">要切换到的有限状态机状态类型。</typeparam>
         /// <param name="fsm">有限状态机引用。</param>
-        protected void ChangeState<TState>(IFsm<T> fsm) where TState : FsmState<T>
+        public void ChangeState<TState>(IFsm<T> fsm) where TState : FsmState<T>
         {
             Fsm<T> fsmImplement = (Fsm<T>)fsm;
             if (fsmImplement == null)
@@ -80,7 +80,7 @@ namespace PKFramework.Runtime.Fsm
         /// </summary>
         /// <param name="fsm">有限状态机引用。</param>
         /// <param name="stateType">要切换到的有限状态机状态类型。</param>
-        protected void ChangeState(IFsm<T> fsm, Type stateType)
+        public void ChangeState(IFsm<T> fsm, Type stateType)
         {
             Fsm<T> fsmImplement = (Fsm<T>)fsm;
             if (fsmImplement == null)
