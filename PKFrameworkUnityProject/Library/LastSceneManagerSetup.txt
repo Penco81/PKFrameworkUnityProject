@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/PKFramework/Scene/Launcher.unity
+- path: Assets/Test/UGUIBatchTest/UGUIBatchTest.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
